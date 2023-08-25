@@ -2,8 +2,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
 const path = require('path');
 
+require('ts-node/register');
+
 module.exports = {
-  entry: '/src/index.ts',
+  entry: './src/index.ts', 
   mode: 'development',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -22,7 +24,7 @@ module.exports = {
     liveReload: true,
   },
   resolve: {
-    extensions: [".js",".ts", ".tsx", ".json",'.scss']
+    extensions: ['.js', '.ts', '.tsx', '.json', '.scss']
   },
   module: {
     rules: [
