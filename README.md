@@ -1,3 +1,6 @@
+## Clockwork Analog and Digital Clock
+
+- Purely in typescript 
 
 ## Pure Vanilla Typescript ECMAScript 10
 
